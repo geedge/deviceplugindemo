@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-pod1
+spec:
+  containers:
+    - name: demo-container-2
+      image: centos:latest
+      command: ["top","-b"]
+      resources:
+        limits:
+          deviceplugindemo/1: 1
